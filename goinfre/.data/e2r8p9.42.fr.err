@@ -1,0 +1,32 @@
+2016-07-04T08:12:56.6NZ mysqld_safe Starting mysqld daemon with databases from /nfs/2016/l/lmarcel/goinfre/.data
+2016-07-04T08:12:57.098567Z 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
+2016-07-04T08:12:57.099141Z 0 [Warning] Insecure configuration for --secure-file-priv: Current value does not restrict location of generated files. Consider setting it to a valid, non-empty path.
+2016-07-04T08:12:57.099201Z 0 [Note] /usr/local/mysql/bin/mysqld (mysqld 5.7.11) starting as process 5229 ...
+2016-07-04T08:12:57.121550Z 0 [ERROR] Plugin keyring_file reported: 'keyring_file initialization failure. Please check if the keyring_file_data points to readable keyring file or keyring file can be created in the specified location. The keyring_file will stay unusable until correct path to the keyring file gets provided'
+2016-07-04T08:12:57.122953Z 0 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
+2016-07-04T08:12:57.123540Z 0 [Note] InnoDB: Uses event mutexes
+2016-07-04T08:12:57.124396Z 0 [Note] InnoDB: GCC builtin __atomic_thread_fence() is used for memory barrier
+2016-07-04T08:12:57.125240Z 0 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2016-07-04T08:12:57.126401Z 0 [Note] InnoDB: Number of pools: 1
+2016-07-04T08:12:57.127200Z 0 [Note] InnoDB: Using CPU crc32 instructions
+2016-07-04T08:12:57.137210Z 0 [Note] InnoDB: Initializing buffer pool, total size = 128M, instances = 1, chunk size = 128M
+2016-07-04T08:12:57.147833Z 0 [Note] InnoDB: Completed initialization of buffer pool
+2016-07-04T08:12:57.161414Z 0 [Note] InnoDB: The first innodb_system data file 'ibdata1' did not exist. A new tablespace will be created!
+2016-07-04T08:12:57.163446Z 0 [ERROR] InnoDB: Unable to lock ./ibdata1 error: 45
+2016-07-04T08:12:57.164072Z 0 [ERROR] InnoDB: Operating system error number 45 in a file operation.
+2016-07-04T08:12:57.164846Z 0 [ERROR] InnoDB: Error number 45 means 'Operation not supported'
+2016-07-04T08:12:57.165595Z 0 [Note] InnoDB: Some operating system error numbers are described at http://dev.mysql.com/doc/refman/5.7/en/operating-system-error-codes.html
+2016-07-04T08:12:57.166391Z 0 [ERROR] InnoDB: Cannot open datafile './ibdata1'
+2016-07-04T08:12:57.167179Z 0 [ERROR] InnoDB: Could not open or create the system tablespace. If you tried to add new data files to the system tablespace, and it failed here, you should now edit innodb_data_file_path in my.cnf back to what it was, and remove the new ibdata files InnoDB created in this failed attempt. InnoDB only wrote those files full of zeros, but did not yet use them in any way. But be careful: do not remove old data files which contain your precious data!
+2016-07-04T08:12:57.167906Z 0 [ERROR] InnoDB: InnoDB Database creation was aborted with error Cannot open a file. You may need to delete the ibdata1 file before trying to start up again.
+2016-07-04T08:12:57.477586Z 0 [ERROR] Plugin 'InnoDB' init function returned error.
+2016-07-04T08:12:57.478386Z 0 [ERROR] Plugin 'InnoDB' registration as a STORAGE ENGINE failed.
+2016-07-04T08:12:57.479196Z 0 [ERROR] Failed to initialize plugins.
+2016-07-04T08:12:57.480041Z 0 [ERROR] Aborting
+
+2016-07-04T08:12:57.480897Z 0 [Note] Binlog end
+2016-07-04T08:12:57.481885Z 0 [Note] Shutting down plugin 'CSV'
+2016-07-04T08:12:57.482520Z 0 [Note] Shutting down plugin 'keyring_file'
+2016-07-04T08:12:57.483537Z 0 [Note] /usr/local/mysql/bin/mysqld: Shutdown complete
+
+2016-07-04T08:12:57.6NZ mysqld_safe mysqld from pid file /nfs/2016/l/lmarcel/goinfre/.data/e2r8p9.42.fr.pid ended
